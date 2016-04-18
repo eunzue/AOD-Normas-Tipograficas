@@ -31,11 +31,19 @@
   /****************************************************************************/
  /*                                  FUENTES                                 */
 /****************************************************************************/
+/* Esta  fuente hace uso de la fuente roboto light, nosotros la guardamos en 
+nuestro servidor para que todo cliente pueda ver con la fuente*/
+@font-face {
+	font-family: aodRoboto;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/aodRoboto.ttf');
+}
+
+
 @font-face {
 	font-family: aodTituloPrincipal;
 	font-style: normal;
-	font-size: 30px;
-	letter-spacing: 0.1em;
 	font-weight: normal;
 	src: url('../fonts/aodDIN.otf');
 }
@@ -43,17 +51,12 @@
 @font-face {
 	font-family: aodTituloPrincipalAlternative;
 	font-style: normal;
-	font-size: 30px;
-	letter-spacing: 0.1em;
-	font-weight: normal;
 	src: url('../fonts/aodNunito.ttf');
 }
 
 @font-face {
 	font-family: aodTituloSecundario;
 	font-style: normal;
-	font-size: 20px;
-	letter-spacing: 0.1em;
 	font-weight: normal;
 	src: url('../fonts/aodDIN.otf');
 }
@@ -61,8 +64,6 @@
 @font-face {
 	font-family: aodTituloSecundarioAlternative;
 	font-style: normal;
-	font-size: 20px;
-	letter-spacing: 0.1em;
 	font-weight: normal;
 	src: url('../fonts/aodNunito.ttf');
 }
@@ -70,8 +71,6 @@
 @font-face {
 	font-family: aodTituloResaltado;
 	font-style: normal;
-	font-size: 22px;
-	letter-spacing: 0.15em;
 	font-weight: 300;
 	src: url('../fonts/aodRoboto.ttf');
 }
@@ -79,8 +78,6 @@
 @font-face {
 	font-family: aodOtrosTextosDestacados;
 	font-style: normal;
-	font-size: 20px;
-	letter-spacing: 0.15em;
 	font-weight: 300;
 	src: url('../fonts/aodRoboto.ttf');
 }
@@ -88,7 +85,6 @@
 @font-face {
 	font-family: aodTituloSecundarioNegrita;
 	font-style: normal;
-	font-size: 20px;
 	font-weight: 700;
 	src: url('../fonts/aodRobotoBold.ttf');
 }
@@ -96,8 +92,6 @@
 @font-face {
 	font-family: aodTextoBotonesGrueso;
 	font-style: normal;
-	font-size: 10px;
-	letter-spacing: 0.1em;
 	font-weight: 700;
 	src: url('../fonts/aodRobotoBold.ttf');
 }
@@ -105,8 +99,6 @@
 @font-face {
 	font-family: aodTextoCajasGrueso;
 	font-style: normal;
-	font-size: 10px;
-	letter-spacing: 0.1em;
 	font-weight: 700;
 	src: url('../fonts/aodRobotoBold.ttf');
 }
@@ -114,8 +106,6 @@
 @font-face {
 	font-family: aodTitularesPequesGrueso;
 	font-style: normal;
-	font-size: 10px;
-	letter-spacing: 0.1em;
 	font-weight: 700;
 	src: url('../fonts/aodRobotoBold.ttf');
 }
@@ -123,8 +113,6 @@
 @font-face {
 	font-family: aodTextoBotones;
 	font-style: normal;
-	font-size: 10px;
-	letter-spacing: 0.1em;
 	font-weight: 500;
 	src: url('../fonts/aodRobotoMedium.ttf');
 }
@@ -132,8 +120,6 @@
 @font-face {
 	font-family: aodTextoCajas;
 	font-style: normal;
-	font-size: 10px;
-	letter-spacing: 0.1em;
 	font-weight: 500;
 	src: url('../fonts/aodRobotoMedium.ttf');
 }
@@ -141,8 +127,6 @@
 @font-face {
 	font-family: aodTitularesPeques;
 	font-style: normal;
-	font-size: 10px;
-	letter-spacing: 0.1em;
 	font-weight: 500;
 	src: url('../fonts/aodRobotoMedium.ttf');
 }
@@ -151,19 +135,10 @@
 @font-face {
 	font-family: aodTextos;
 	font-style: normal;
-	font-size: 15px;
-	letter-spacing: 0.1em;
-	font-weight: 700;
-	src: url('../fonts/aodRobotoBold.ttf');
+	font-weight: 300;
+	src: url('../fonts/aodRoboto.ttf');
 }
 
-@font-face {
-	font-family: aodTextosPeques;
-	font-style: normal;
-	font-size: 10px;
-	font-weight: 500;
-	src: url('../fonts/aodRobotoMedium.ttf');
-}
 
   /****************************************************************************/
  /*                                Properties                                */
@@ -171,13 +146,57 @@
 
 
 h1{
-	font-family: 'aodTituloPrincipal', 'aodTituloPrincipalAlternative';
+	font-family: 'aodRoboto';
 	text-transform: uppercase;
+	font-size: 40px;
+	letter-spacing: 0.1em;
+	color: #76A1B8;
+}
+
+.descripcionTitulo1, .tituloResaltado, .otrosTextosDestacados{
+	font-family: 'aodTituloResaltado';
+	text-transform: uppercase;
+	font-size: 30px;
+	text-align: justify;
+	line-height: normal;
 }
 
 h2{
-	font-family: 'aodTituloSecundario', 'aodTituloSecundarioAlternative';
+	font-family: 'aodTituloResaltado';
 	text-transform: uppercase;
+	font-size: 27px;
+	letter-spacing: 0.1em;
+	font-weight: normal;
+	color: #76A1B8;
+	
+}
+
+.titulosSecundariosNegritas{
+	font-family: 'aodTituloSecundarioNegrita';
+	font-size: 20px;
+	color: #76A1B8;
+}
+
+.textosNormales{
+	font-family: 'aodTextos';
+	font-size: 14px;
+	text-align: justify;
+	line-height: 21px;
+}
+
+.textosNormales a{;
+	font-size: 14px;
+	text-align: left;
+	color: #3b515c !important;
+	text-decoration: none;
+	outline: 0;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+.textosNormales a:hover{
+	font-size: 14px;
+	color: #000 !important;
 }
 
 </style>
