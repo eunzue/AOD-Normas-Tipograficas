@@ -135,8 +135,8 @@ nuestro servidor para que todo cliente pueda ver con la fuente*/
 @font-face {
 	font-family: aodTextos;
 	font-style: normal;
-	font-weight: 300;
-	src: url('../fonts/aodRoboto.ttf');
+	font-weight: 400;
+	src: url('../fonts/aodRobotoRegular.ttf');
 }
 
 
@@ -151,21 +151,22 @@ h1{
 	font-size: 40px;
 	letter-spacing: 0.1em;
 	color: #76A1B8;
+	font-weight: 300;
 }
 
 .descripcionTitulo1, .tituloResaltado, .otrosTextosDestacados{
 	font-family: 'aodTituloResaltado';
-	text-transform: uppercase;
 	font-size: 30px;
 	text-align: justify;
-	line-height: normal;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
 }
 
 h2{
 	font-family: 'aodTituloResaltado';
 	text-transform: uppercase;
 	font-size: 27px;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.07em;
 	font-weight: normal;
 	color: #76A1B8;
 	
@@ -175,17 +176,19 @@ h2{
 	font-family: 'aodTituloSecundarioNegrita';
 	font-size: 20px;
 	color: #76A1B8;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 }
 
 .textosNormales{
 	font-family: 'aodTextos';
-	font-size: 14px;
+	font-size: 12px;
 	text-align: justify;
 	line-height: 21px;
 }
 
 .textosNormales a{;
-	font-size: 14px;
+	font-size: 12px;
 	text-align: left;
 	color: #3b515c !important;
 	text-decoration: none;
@@ -195,7 +198,26 @@ h2{
 }
 
 .textosNormales a:hover{
-	font-size: 14px;
+	font-size: 12px;
+	color: #000 !important;
+}
+
+.verMas a{
+	font-family: 'aodTitularesPequesGrueso';
+	font-size: 11px;
+	text-align: left;
+	color: #76A1B8 !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	outline: 0;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+}
+
+.verMas a:hover{
+	font-family: 'aodTitularesPequesGrueso';
+	text-transform: uppercase;
+	font-size: 11px;
 	color: #000 !important;
 }
 
