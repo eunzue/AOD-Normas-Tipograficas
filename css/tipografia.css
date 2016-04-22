@@ -148,10 +148,11 @@ nuestro servidor para que todo cliente pueda ver con la fuente*/
 h1{
 	font-family: 'aodRoboto';
 	text-transform: uppercase;
-	font-size: 40px;
+	font-size: 45px;
 	letter-spacing: 0.1em;
 	color: #76A1B8;
 	font-weight: 300;
+	line-height: 1.5em;
 }
 
 .descripcionTitulo1, .tituloResaltado, .otrosTextosDestacados{
@@ -165,10 +166,11 @@ h1{
 h2{
 	font-family: 'aodTituloResaltado';
 	text-transform: uppercase;
-	font-size: 27px;
+	font-size: 30px;
 	letter-spacing: 0.07em;
 	font-weight: normal;
 	color: #76A1B8;
+	line-height: 1.5em;
 	
 }
 
@@ -181,14 +183,18 @@ h2{
 }
 
 .textosNormales{
-	font-family: 'aodTextos';
-	font-size: 12px;
-	text-align: justify;
-	line-height: 21px;
+	font-family: 'aodTextos' !important;
+	font-size: 14px !important;
+	text-align: justify !important;
+	line-height: 21px !important;
 }
 
-.textosNormales a{;
-	font-size: 12px;
+.textosNormales b{
+	color: #76A1B8 !important;
+}
+
+.textosNormales a{
+	font-size: 14px !important;
 	text-align: left;
 	color: #3b515c !important;
 	text-decoration: none;
@@ -198,8 +204,22 @@ h2{
 }
 
 .textosNormales a:hover{
-	font-size: 12px;
+	font-size: 14px !important;
 	color: #000 !important;
+}
+
+.titularesPeques{
+	font-family: 'aodTitularesPeques' !important;
+	font-size: 14px;
+	text-align: left;
+	color: #76A1B8 !important;
+}
+
+.textoCajas{
+	font-family: 'aodTextoCajas' !important;
+	font-size: 14px;
+	text-align: left;
+	color: #FFF !important;
 }
 
 .verMas a{
@@ -219,6 +239,10 @@ h2{
 	text-transform: uppercase;
 	font-size: 11px;
 	color: #000 !important;
+}
+
+.multimediaPresentaciones {
+	margin-top: 20px;
 }
 
 </style>
