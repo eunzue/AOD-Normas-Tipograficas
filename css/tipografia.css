@@ -1,6 +1,6 @@
 <style>
 
-  /****************************************************************************/
+	/****************************************************************************/
  /*                                  COLORES                                 */
 /****************************************************************************/
 .azul{
@@ -27,8 +27,12 @@
 	color: #332F21;
 }
 
+.azulPalido{
+	color: #EBF1F4;
+}
 
-  /****************************************************************************/
+
+	/****************************************************************************/
  /*                                  FUENTES                                 */
 /****************************************************************************/
 /* Esta  fuente hace uso de la fuente roboto light, nosotros la guardamos en 
@@ -140,7 +144,7 @@ nuestro servidor para que todo cliente pueda ver con la fuente*/
 }
 
 
-  /****************************************************************************/
+	/****************************************************************************/
  /*                                Properties                                */
 /****************************************************************************/
 
@@ -193,6 +197,17 @@ h2{
 	color: #76A1B8 !important;
 }
 
+.textosNormales .recuadroRedondeado {
+	font-size: 14px !important;
+	text-align: left;
+	color: #FFF !important;
+	text-decoration: none;
+	outline: 0;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+
 .textosNormales a{
 	font-size: 14px !important;
 	text-align: left;
@@ -201,6 +216,7 @@ h2{
 	outline: 0;
 	letter-spacing: 1px;
 	font-weight: bold;
+	word-wrap: break-word;
 }
 
 .textosNormales a:hover{
@@ -215,12 +231,27 @@ h2{
 	color: #76A1B8 !important;
 }
 
+/*Estos son los textos que estan en blanco con fondo azúl*/
 .textoCajas{
 	font-family: 'aodTextoCajas' !important;
 	font-size: 14px;
 	text-align: left;
 	color: #FFF !important;
 }
+
+/*Estos son los textos que tienen fondo blanco y letras de color azul*/
+.textoCajasInverso{
+	font-family: 'aodTextoCajas' !important;
+	font-size: 14px;
+	text-align: left;
+	color: #76A1B8 !important;
+	border-bottom: solid 2px #76a1b8;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
 
 .verMas a{
 	font-family: 'aodTitularesPequesGrueso';
@@ -241,8 +272,325 @@ h2{
 	color: #000 !important;
 }
 
+
 .multimediaPresentaciones {
 	margin-top: 20px;
 }
+
+.additional-info section.tags{
+	padding-bottom: 5px;
+}
+
+
+.additional-info .titulo{
+	border-bottom: solid 2px #76a1b8;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.additional-info .propiedadesIAEST{
+	border-bottom: solid 2px #76a1b8;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+	/****************************************************************************/
+ /*                          Ficha recomendaciones                           */
+/****************************************************************************/
+.tituloRecomendaciones{
+	font-family: 'aodTituloResaltado';
+	font-size: 22px;
+	text-align: justify;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+}
+
+
+
+.recommendThumbnail{
+	width:307px;
+	height:258px;
+	background-color:bisque;
+}
+
+
+.recommendThumbnail ul {
+	list-style: none;
+}
+
+.recommendPackages li{
+	display: inline-flex;
+}
+
+.recommendThumbnail.enMedio{
+	margin-left:25px;
+	margin-right:25px;
+}
+
+.recommendThumbnail .front .arriba{
+	height:185px;
+	background-color: #EBF1F4;
+}
+
+.recommendThumbnail .front .arriba .title{
+	text-transform: uppercase;
+	font-family: 'aodTextos';
+	font-size: 14px;
+	font-weight:bold;
+	padding-bottom:5px;
+	padding-top:10px;
+	margin-left:10px;
+	color:#76A1B8;
+}
+
+
+.recommendThumbnail .front .arriba .tema{
+	text-align:center;
+	    padding-top: 30px;
+}
+
+.recommendThumbnail .front .arriba .tema .imagen{
+	height: 125px;
+}
+
+.recommendThumbnail .front .arriba .tema .tituloTema{
+	text-transform: uppercase;
+	font-family: 'aodTextos';
+	font-size: 14px;
+	font-weight:bold;
+	color:#76A1B8;
+	padding-top: 3px;
+}
+
+.recommendThumbnail .front .separador{
+	height:3px;
+	background-color: #FFF;
+}
+.recommendThumbnail .front .abajo{
+	height:70px;
+	background-color: #76A1B8;
+	text-transform: uppercase;
+}
+	
+.recommendThumbnail .front .abajo .tituloConjuntoDatos{
+	font-family: 'aodTextos';
+	font-size: 14px;
+	font-weight:bold;
+	padding-top:7px;
+	line-height: initial;
+	margin-left:10px;
+	margin-right: 10px;
+	color:#FFF;
+}
+	
+.recommendThumbnail .back{
+	width:307px;
+	height:258px;
+	background-color: #EBF1F4;
+}
+
+.recommendThumbnail .back .title{
+	text-transform: uppercase;
+	font-family: 'aodTextos';
+	font-size: 14px;
+	font-weight:bold;
+	padding-top:10px;
+	margin-left:10px;
+	color:#76A1B8;
+	text-align: left;
+}
+
+.recommendThumbnail .back .key{
+	text-transform: uppercase;
+	font-family: 'aodTextos';
+	font-size: 14px;
+	font-weight:bold;
+	padding-top:15px;
+	margin-left:10px;
+	margin-right :10px;
+	color:#76A1B8;
+	text-align: left;
+}
+
+.recommendThumbnail .back .value{
+	font-family: 'aodTextos';
+	font-size: 14px;
+	font-weight:bold;
+	padding-top:5px;
+	margin-left:10px;
+	margin-right :10px;
+	color:#332F21;
+	text-align: left;
+
+}
+
+.recommendThumbnail .back .marcaAguaTema{
+	text-align:center;
+	opacity: 0.25;
+	z-index:1;
+	padding-top: 30px;
+}
+
+.oculto {
+	display: none;
+	visibility: hidden;
+}
+
+.socialDataset{
+		padding-top: 8px;
+}
+
+.infoConjuntoDato{
+		margin-top: -165px;
+		z-index:2;
+}
+
+
+	/****************************************************************************/
+ /*                             Botones de home                              */
+/****************************************************************************/
+.btn-search {
+	background-image: url("/public/i/lupa.jpg");
+	border: 0;
+	height: 26px;
+	text-indent: -999em;
+	width: 26px;
+	margin-left: 4px;
+	cursor: pointer;
+	vertical-align: bottom;
+	display: inline-flex;
+}
+
+.btn-search:hover {
+	background-image: url("/public/i/lupaNegativo.jpg");
+	border: 0;
+	height: 26px;
+	text-indent: -999em;
+	width: 26px;
+	margin-left: 4px;
+	cursor: pointer;
+	vertical-align: bottom;
+	display: inline-flex;
+}
+
+.btn-login {
+	background-image: url("/public/i/login.jpg");
+	border: 0;
+	height: 26px;
+	text-indent: -999em;
+	width: 26px;
+	margin-left: 4px;
+	cursor: pointer;
+	vertical-align: bottom;
+	display: inline-flex;
+}
+
+.btn-login:hover {
+	background-image: url("/public/i/loginNegativo.jpg");
+	border: 0;
+	height: 26px;
+	text-indent: -999em;
+	width: 26px;
+	margin-left: 4px;
+	cursor: pointer;
+	vertical-align: bottom;
+	display: inline-flex;
+}
+
+.btn-logout {
+	background-image: url("/public/i/logout.jpg");
+	border: 0;
+	height: 26px;
+	text-indent: -999em;
+	width: 26px;
+	margin-left: 4px;
+	cursor: pointer;
+	vertical-align: bottom;
+	display: inline-flex;
+}
+
+.btn-logout:hover {
+	background-image: url("/public/i/logoutNegativo.jpg");
+	border: 0;
+	height: 26px;
+	text-indent: -999em;
+	width: 26px;
+	margin-left: 4px;
+	cursor: pointer;
+	vertical-align: bottom;
+	display: inline-flex;
+}
+
+
+.btn-dashboard {
+	background-image: url("/public/i/dashboard.jpg");
+	border: 0;
+	height: 26px;
+	text-indent: -999em;
+	width: 26px;
+	margin-left: 4px;
+	cursor: pointer;
+	vertical-align: bottom;
+	display: inline-flex;
+}
+
+
+	/****************************************************************************/
+ /*                    Responsive con la nueva tipograia                     */
+/****************************************************************************/
+@media screen and (min-width:320px) and (max-width: 549px)  {
+	.additional-info .titulo{padding-bottom: 25px;}
+}
+
+@media screen and (min-width:400px) and (max-width: 549px)  {
+	.additional-info .propiedadesIAEST{padding-bottom: 25px;}
+}
+
+@media screen and (min-width:320px) and (max-width: 399px)  {
+	.additional-info .propiedadesIAEST{padding-bottom: 45px;}
+}
+
+@media screen and (min-width:320px) and (max-width: 1024px)  {
+	h1{
+		text-align: left;
+	}
+
+	.descripcionTitulo1, .tituloResaltado, .otrosTextosDestacados{
+		text-align: left;
+	}
+
+	h2{
+		text-align: left;
+	}
+
+	.titulosSecundariosNegritas{
+		text-align: left;
+	}
+}
+
+@media screen and (min-width:320px) and (max-width: 1024px)  {
+	.recommendThumbnail.enMedio{
+		margin-left:0px;
+		margin-right:0px;
+	}
+}
+
+@media screen and (min-width:320px) and (max-width: 974px)  {
+	.recommendPackages{
+		text-align: center;
+	}
+	
+	.recommendThumbnail{
+		margin-left:10px;
+		margin-right:10px;
+		margin-bottom:30px;
+	}
+}
+
+
 
 </style>
